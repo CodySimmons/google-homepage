@@ -9,7 +9,7 @@ body{
     background-color: var(--color-white);
     display: grid;
     width: 100vw;
-    height:100vw;
+    /* height:100vw; */
     grid-template-rows: 7vh 83vh 10vh;
     grid-template-areas: 
         "header"
@@ -22,7 +22,7 @@ body{
     height: 100%;
 }
 
-.page_container{
+.page-container{
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -31,22 +31,28 @@ body{
 }
 
 .nav{
+    display: flex;
+    justify-content: space-between;
     padding-right: 30px;
     text-align: right;
     width: 100%;
     padding-right: 30px;
     align-items: center;
 }
-.nav_list{
+.nav ul{
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    
+}
 
-    
+.nav_list_left{
+    float: left;
+}
+
+.nav_list_right{
+    float: right;
 }
 
 .nav_item{
@@ -95,8 +101,8 @@ a:hover{
 .content{
     flex: 1 0 auto;
     text-align: center;
-    margin-top: 15%;
     padding-bottom: 15%;
+    padding-top: 109px;
 }
 
 .google-logo{
@@ -110,6 +116,8 @@ img.google-logo{
 
 .outer_search{
     display: black;
+    max-width: 584px;
+    margin: 0 auto;
 }
 
 #searchbar{
@@ -117,10 +125,11 @@ img.google-logo{
     justify-content: space-between;
     align-items: center;
     padding: 1px 14px 1px 14px;
-    border: 1px solid rgba(0, 0, 0, 1.00);
+    border: 1px solid #dfe1e5;
     border-radius: 30px;
     margin: 5px auto 9px auto;
     max-width: 65vw;
+    height: 44px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -131,16 +140,67 @@ img.google-logo{
 
 #searchbox{
     outline: none;
-    width: 68vw;
-    max-width: 430px;
+    width: 100%;
     height: 40px;
     border: none;
     font-size: 17px;
 }
-
+#searchbar:hover{
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    border-color: rgba(223, 225, 229, 0);
+}
 form{
     height: 100%;
     flex: 1;
+}
+
+.main-submit{
+    margin-top: 25px;
+}
+
+.main-submit button{
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.main-submit button:hover{
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-top: 1px solid #e4e4e4;
+    background-color: #f2f2f2;
+}
+
+.footer ul{
+    list-style: none;
+    display: flex;
+}
+
+.footer_item{
+    padding-left: 27px;
+    margin: 0;
+}
+
+img.carbon_leaf{
+    height: 14px;
 }
 
 *{
@@ -148,3 +208,4 @@ form{
     color: black;
     text-decoration: none;
 }
+

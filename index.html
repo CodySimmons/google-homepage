@@ -9,23 +9,29 @@
         <div class="page">
             <div class="page-container">
                 <!--Navigation-->
-                <nav class="nav">
-                    <ul class="nav_list">
-                        <li class="nav_item"><a href="#">Gmail</a></li>
-                        <li class="nav_item"><a href="#">Images</a></li>
-                        <li class="nav_item">
-                            <a href="#" class="squarebutton"></a>
-                        </li>
-                        <li class="nav_item nav_item_profile">
-                            <a href="https://github.com/Hitobeat" target="_blank">
-                                <img class="profile_pic"
-                                src="images/usericon.jpg"
-                                />
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+                <header>
+                    <nav class="nav">
+                        <ul class="nav_list_left">
+                            <li class="nav_item"><a href="#">About</a></li>
+                            <li class="nav_item"><a href="#">Store</a></li>
+                        </ul>
 
+                        <ul class="nav_list_right">
+                            <li class="nav_item"><a href="#">Gmail</a></li>
+                            <li class="nav_item"><a href="#">Images</a></li>
+                            <li class="nav_item">
+                                <a href="#" class="squarebutton"></a>
+                            </li>
+                            <li class="nav_item nav_item_profile">
+                                <a href="https://github.com/Hitobeat" target="_blank">
+                                    <img class="profile_pic"
+                                    src="images/usericon.jpg"
+                                    />
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
                 <!--Main Area-->
                 <main class="content">
                     <img class="google-logo"
@@ -38,13 +44,30 @@
                             <input name="query" id="searchbox">
                             <img id="search-image" src="images/googlemic_clr_24px.svg" alt>
                         </form>
-                    </div>    
-                    <input type="button" name="search" class="button" value="Google Search">
-                    <input type="button" name="lucky" class="button" value="I'm Feeling Lucky">
                     </div>
+                    <div class="main-submit">
+                        <button type="submit" class="main_submit-submit">Google Search</button>
+                        <button type="button" class="main_submit-lucky">I'm Feeling Lucky</button>
+                    </div>    
                 </main>
-                <footer>
-                    123
+                <footer class="footer">
+                    <ul class="footer_list_left">
+                        <li class="footer_item"><a href="#">Advertising</a></li>
+                        <li class="footer_item"><a href="#">Business</a></li>
+                        <li class="footer_item"><a href="#">How Search Works</a></li>
+                    </ul>
+
+                    <ul class="footer_list_mid">
+                    <li><img src="images/carbonleaf.png" alt="leaf image" class="carbon_leaf"></li>
+                    <li><a href="#">Carbon neutral since 2007</a></li>
+                    </ul>
+
+
+                    <ul class="footer_list_right">
+                        <li class="footer_item"><a href="#">Privacy</a></li>
+                        <li class="footer_item"><a href="#">Terms</a></li>
+                        <li class="footer_item"><a href="#">Settings</a></li>
+                    </ul>
                 </footer>
             </div>
         </div>
